@@ -13,6 +13,9 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import java.net.HttpURLConnection;
+import java.net.URL;
+
 public class AddVisitorsActivity extends AppCompatActivity {
     EditText et1,et2,et3,et4;
     String fname,lname,purpose,whomeet;
@@ -47,6 +50,7 @@ public class AddVisitorsActivity extends AppCompatActivity {
                 lname=et2.getText().toString();
                 purpose=et3.getText().toString();
                 whomeet=et4.getText().toString();
+
                 Toast.makeText(getApplicationContext(),fname + lname + purpose + whomeet,Toast.LENGTH_LONG).show();
             }
         });
