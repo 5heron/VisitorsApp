@@ -16,7 +16,7 @@ import androidx.core.view.WindowInsetsCompat;
 public class AddVisitorsActivity extends AppCompatActivity {
     EditText et1,et2,et3,et4;
     String fname,lname,purpose,whomeet;
-    Button b1;
+    Button b1,b2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,6 +32,14 @@ public class AddVisitorsActivity extends AppCompatActivity {
         et3=(EditText) findViewById(R.id.purpose);
         et4=(EditText) findViewById(R.id.whomeet);
         b1=(Button) findViewById(R.id.subbt);
+        b2=(Button) findViewById(R.id.backbt);
+        b2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent ob = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(ob);
+            }
+        });
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
