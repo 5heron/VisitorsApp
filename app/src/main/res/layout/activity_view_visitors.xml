@@ -60,6 +60,12 @@
                 android:textSize="20dp"
                 android:layout_marginHorizontal="10dp"/>
         </LinearLayout>
+        <TextView
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt"
+            android:padding="10dp"/>
 
 
         <androidx.appcompat.widget.AppCompatButton
